@@ -3,10 +3,10 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import { isMswEnabled } from "./util/api";
+import { enableMsw } from "./util/api";
 
 async function main() {
-  if (isMswEnabled) {
+  if (enableMsw) {
     if (window.location.pathname === process.env.PUBLIC_URL) {
       window.location.pathname = process.env.PUBLIC_URL + "/";
     }
