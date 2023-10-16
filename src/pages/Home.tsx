@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { apiAxios } from "../util/api";
 import { DebugTable } from "../components/DebugTable";
 
-export default function Home() {
+export function Home() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {

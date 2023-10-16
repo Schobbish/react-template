@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Error404 from "./pages/Error404";
-import Home from "./pages/Home";
+import { Error404 } from "./pages/Error404";
+import { Home } from "./pages/Home";
 
 export default function App() {
   return (
