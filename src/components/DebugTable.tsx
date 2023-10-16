@@ -9,7 +9,7 @@ export interface DebugTableProps {
 export function DebugTable(props: DebugTableProps) {
   if (config.showDebugTables && process.env.NODE_ENV === "development")
     return (
-      <table className="absolute bottom-0 left-0 bg-neutral-600 text-left">
+      <table className="debug-table absolute bottom-0 left-0 text-left bg-neutral-600">
         <tbody>
           {Object.keys(props.variables).map((key) => (
             <tr key={key}>

@@ -13,7 +13,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen text-white text-center bg-black">
+    <div className="home flex flex-col justify-center items-center min-h-screen text-center text-white bg-black">
       <h1 className="text-6xl whitespace-pre-wrap">{message}</h1>
       <DebugTable variables={{ message }} />
     </div>
