@@ -2,9 +2,9 @@ export const config = {
   /**
    * Use MSW in production builds too (unless useExternalApi is true).
    *
-   * Default: false.
+   * Default: true (so it works on GitHub Pages).
    */
-  alwaysUseMsw: false,
+  alwaysUseMsw: true,
   /**
    * Set to true to use the origin specified by externalApiOrigin
    * for API requests instead of MSW (only affects dev builds
