@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_template=self.webpackChunkreact_template||[]).push([[978],{3978:function(e,t,r){r.r(t),r.d(t,{worker:function(){return l}});var n=r(8509),a=n.rest.get("/react-template/api/hello_world",(function(e,t,r){return t(r.status(200),r.json("hello,\nworld!"))})),l=(0,n.setupWorker)(a)}}]);
+//# sourceMappingURL=978.6b7c7ffd.chunk.js.map
