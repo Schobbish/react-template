@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import { App } from "./App";
 import "./index.css";
-import reportWebVitals from "./reportWebVitals";
+import { reportWebVitals } from "./reportWebVitals";
 import { enableMsw } from "./util/api";
 
 async function main() {
