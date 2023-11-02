@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { DebugTable } from "../components/DebugTable";
 import { apiAxios } from "../util/api";
 
+/** Simple home page to demonstrate MSW and other included packages. */
 export function Home() {
   const [message, setMessage] = useState("");
 

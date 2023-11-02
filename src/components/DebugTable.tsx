@@ -5,6 +5,12 @@ export interface DebugTableProps {
   variables: { [key: string]: string | number | boolean | undefined | null };
 }
 
+/**
+ * Displays variable states in a convenient table format.
+ *     Tables will only show if `config.showDebugTables` is true and this is a
+ *     dev build. However, these tables should still ultimately be removed
+ *     entirely from production builds.
+ */
 export function DebugTable(props: DebugTableProps) {
   if (config.showDebugTables && process.env.NODE_ENV === "development")
     return (

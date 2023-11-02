@@ -17,6 +17,7 @@ const router = createBrowserRouter(
   { basename: process.env.PUBLIC_URL }
 );
 
+/** Defines the router and possibly any global context. */
 export function App() {
   return <RouterProvider router={router} />;
 }

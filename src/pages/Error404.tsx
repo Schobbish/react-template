@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 
+/** Simple 404 error page. */
 export function Error404() {
   return (
     <div className="error-404 flex justify-center items-center min-h-screen text-white bg-red-950">
