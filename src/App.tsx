@@ -1,23 +1,14 @@
-import {
-  Route,
-  RouterProvider,
-  createBrowserRouter,
-  createRoutesFromElements
-} from "react-router-dom";
-import { Error404 } from "./pages/Error404";
-import { Home } from "./pages/Home";
+import { Outlet, ScrollRestoration } from "react-router-dom";
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <>
-      <Route index element={<Home />} />
-      <Route path="*" element={<Error404 />} />
-    </>
-  ),
-  { basename: process.env.PUBLIC_URL }
-);
-
-/** Defines the router and possibly any global context. */
+/**
+ * For now it's here for just ScrollRestoration but this is a
+ * good place for global context and other things as well.
+ */
 export function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <Outlet />
+      <ScrollRestoration />
+    </>
+  );
 }
