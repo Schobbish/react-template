@@ -1,27 +1,10 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
-import {
-  Route,
-  RouterProvider,
-  createBrowserRouter,
-  createRoutesFromElements
-} from "react-router-dom";
-import { App } from "./App";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./index.css";
-import { Error404 } from "./pages/Error404";
-import { Home } from "./pages/Home";
 import { reportWebVitals } from "./reportWebVitals";
+import { routes } from "./routes";
 import { enableMsw } from "./util/api";
-
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<App />}>
-      <Route index element={<Home />} />
-      <Route path="*" element={<Error404 />} />
-    </Route>
-  ),
-  { basename: process.env.PUBLIC_URL }
-);
 
 async function main() {
   if (enableMsw) {
@@ -37,6 +20,10 @@ async function main() {
       onUnhandledRequest: "bypass"
     });
   }
+
+  const router = createBrowserRouter(routes, {
+    basename: process.env.PUBLIC_URL
+  });
 
   const root = ReactDOM.createRoot(
     document.getElementById("root") as HTMLElement
