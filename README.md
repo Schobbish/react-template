@@ -5,7 +5,7 @@ Creates a react app with
 - Typescript
 - Tailwind
 - MSW
-- Axios, Formik, Yup, and Lodash installed
+- Axios, React Hook Form, Lodash, and Yup installed
 - ESLint and Prettier set up with pre-commit hooks
 - GitHub Pages support
 
